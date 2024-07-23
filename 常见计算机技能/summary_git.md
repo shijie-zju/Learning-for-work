@@ -43,7 +43,7 @@ git reset --hard 某次提交的id (本地版本回退到该状态)
 git remote add origin https://github.com/shijie-zju/zjustudy.git (添加远程仓库)
 
 **git remote -v（查看本地和远程哪些仓库联系）**
-
+git
 `git push`（更新至我的远程仓库中）
 
 git push origin main:main -f:或如果不小心创建了分支，可以把它强制规定到主分支下！
