@@ -7,9 +7,11 @@ my_set = set([1,2,3]) #2将列表中元素转换为集合
 ```
 添加 `my_set.add(x)`
 
+创建 `a = set()`
+
 成员测试 `x in my_set`
 
-删除 `my_set.remove(x)` `my_set.pop(x)`
+删除 `my_set.remove(x)` **`my_set.discard(x)`这个不存在时不报错**
 
 长度 `len(my_set)`
 
@@ -19,6 +21,18 @@ my_set = set([1,2,3]) #2将列表中元素转换为集合
 添加元素 `my_list.append(x)` `my_list.insert(i,x) #i位置插入x`
 
 索引 `my_list[0]`
+
+删除`del my_list[2]`
+
+创建空列表 `mylist = []`
+
+##### 字符列表
+
+字符串转换为字符列表格式 `str_list = list('hello')`
+
+字符列表排序 sort_list = `sorted(str_list)`
+
+字符列表拼为字符串 `k = ''.join(sorted(list(str))))`
 
 遍历
 ```commandline
@@ -39,6 +53,8 @@ my_dict = dict(name='Alice', age=25)
 
 访问 `value = my_dict['age']`
 
+创建空字典 mydict = {}
+
 遍历
 ```commandline
 for key in my_dict:
@@ -48,7 +64,7 @@ for value in my_dict.values():
 for key, value in my_dict.items():
     print(key, value)
 ```
-删除 `del my_dict['age']` `my_dict.pop('age',[default])`
+**删除 `del my_dict['age']`** `my_dict.pop('age',[default])`
 
 长度 `len(my_dict)`
 

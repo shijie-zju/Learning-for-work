@@ -27,7 +27,7 @@ forward中是前向传播网络，目的是接收特定维度的数据
 criterion = torch.nn.MSELoss(reduction='sum') #均方误差，reduction='sum'是最后loss加和
 criterion = torch.nn.BCELoss(size_average=False，reduction='mean') #二分类交叉熵损失，size_average=False对一个batch里面的所有的数据不求求均值
 criterion = torch.nn.CrossEntropyLoss() #交叉熵损失，此时最后一层网络不需要激活了，
-# 因为softmax会取到0-1且和为1的范围，相当于交叉熵包括了 softmax(x)+log(x)+nn.NLLLoss负对数似然损失===>nn.CrossEntropyLoss
+因为softmax会取到0-1且和为1的范围，相当于交叉熵包括了 softmax(x)+log(x)+nn.NLLLoss负对数似然损失===>nn.CrossEntropyLoss
 6.数据集读取
 epoch（几轮），数据集大小=batchsize（一次更新多少）*iteration（指一轮更新几次）
 dataloader 主要用于从数据集中拿出batchsize大小的数据 # y（batch*6）= 激活（x(batch*8) * w(8*6) + b）
